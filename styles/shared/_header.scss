@@ -1,0 +1,43 @@
+.header-wrap {
+    background-color: $dark-blue;
+    .navbar {
+        padding: 1rem;
+        .navbar-brand, .nav-link {
+            color: $white;
+            font-size: 25px;
+        }
+        .nav-item {
+            margin-left: 10px;
+            .nav-link {
+                &:hover, &:focus, &.active {
+                    color: $lighter-blue;
+                }
+            }
+            .clickable {
+                cursor: pointer;
+            }
+        }
+    }
+    .navbar-light {
+        .navbar-toggler {
+            padding: 0.05rem 0.5rem;
+            font-size: 1.25rem;
+            line-height: 1;
+            background-color: $white;
+            border: none;
+            border-radius: 0;
+            outline: 0;
+        }
+        .navbar-toggler-icon {
+            width: 20px;
+        }
+    }
+    @media screen and (max-width: 991px) {
+        .nav-item {
+            border-top: 1px dashed $white;
+            &:first-child {
+                margin-top: 30px;
+            }
+        }
+    }
+}

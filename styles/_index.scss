@@ -1,0 +1,79 @@
+// ----INDEX PAGE-----
+.cover {
+  overflow: hidden;
+  position: relative;
+}
+
+.wrapper {
+  position: relative;
+}
+
+.main-section {
+	width: 100%;
+	.inner {
+		@media screen and (min-width: 991px) {
+			padding-top: 100px;
+		}
+	}
+}
+
+.image {
+  width: auto;
+  max-width: 100%;
+}
+
+.hero-welcome-text > h2 {
+  color: $white;
+  margin-top: 80px;
+  @media screen and (max-width: 991px) {
+    margin-top: 40px;
+  }
+}
+
+.hero-welcome-bio {
+  margin-top: 20px;
+  color: $white;
+
+  // .fa-stack {
+  //   font-size: 28px;
+  // }
+
+  // .list-inline-item {
+  //   > a {
+  //     color: #373737;
+  //   }
+  // }
+}
+
+.hero-welcome-wrapper {
+  justify-content: flex-end;
+
+}
+
+.background-image {
+  position: absolute;
+  width: 1762px;
+  height: 100vh;
+  img {
+    height: 100%;
+  }
+}
+
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media screen and (max-width: 991px) {
+    margin-top: 40px;
+  }
+  .image {
+    width: 90%;
+  }
+}
+
+.seft-typed {
+  color: $white;
+  font-weight: 700;
+  letter-spacing: 10;
+  font-size: 50px;
+}

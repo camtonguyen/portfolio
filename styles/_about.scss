@@ -1,0 +1,27 @@
+.about-page {
+    .left-side {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        @media (max-width: 768px) {
+            justify-content: center;
+        }
+        img {
+            animation: moveInTop .5s ease-in-out;
+        }
+    }
+    .right-side {
+        .row {
+            &--1, &--2, &--3 {
+                animation: moveInTop .5s linear;
+            }
+            &--2 {
+                animation-delay: .05s;
+            }
+            &--3 {
+                animation-delay: .07s;
+            }
+            
+        }
+    }
+}

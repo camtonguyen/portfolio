@@ -1,0 +1,90 @@
+@import '~bootstrap/scss/bootstrap.scss';
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
+
+@import './shared/colors';
+@import './datepicker';
+
+// PAGES
+@import './index';
+@import './portfolios';
+@import './about';
+
+// COMPONENTS
+@import './shared/header';
+
+html, body {
+  height:100%;
+  width:100%;
+  font-family: 'Indie Flower', cursive;
+  background-color: $gray-200;
+}
+
+.error {
+  color: red;
+  padding-top: 10px;
+}
+
+.react-datepicker-wrapper {
+  margin-right: 20px;
+}
+
+.btn-custom {
+  margin-left: 20px;
+}
+
+.btn-group {
+  .btn {
+    border-radius: 0;
+  }
+}
+
+.create-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    width: 25%;
+    cursor: pointer;
+  }
+}
+
+.base-page {
+  padding-top: 100px;
+
+  .page-header {
+    .page-header-title {
+      font-weight: 700;
+      color: $black;
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+  }
+  &.loading {
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+.resume-page {
+  animation: moveInTop .5s ease-in-out;
+}
+
+@keyframes moveInTop {
+  0% {
+      opacity: 0;
+      transform: translateY(50px);
+  }
+
+  80% {
+      opacity: .5;
+      transform: translateY(10px);
+  }
+
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}

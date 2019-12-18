@@ -1,0 +1,61 @@
+.portfolio-page {
+  min-height: 100vh;
+
+  .portfolio-card {
+    border-radius: 0;
+    border: none;
+    transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1) 0s;
+    margin-bottom: 20px;
+    animation: moveInTop .5s ease-in-out;
+
+    &:hover {
+      cursor: pointer;
+      transform: translateY(-5px);
+    }
+
+    &:hover .readMore:before {
+      background: linear-gradient(to right, $white 0%,$white 100%);
+    }
+
+    &-header {
+      padding: 10px;
+      padding-right: 15px;
+      text-align: right;
+      font-weight: 600;
+      font-size: 17px;
+      background-color: $dark-blue;
+      color: $white;
+      border-radius: 0;
+    }
+
+    &-title {
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 1.1;
+      margin-bottom: 10px;
+    }
+
+    &-text {
+      line-height: 1.3;
+      display: flex;
+      justify-content: space-between;
+    }
+    .portolio-card-image {
+      border-radius: 0;
+    }
+  }
+}
+
+.card-modal {
+  .modal-content {
+    border-radius: 0;
+  }
+  button {
+    outline: none;
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+
