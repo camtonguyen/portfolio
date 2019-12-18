@@ -41,7 +41,7 @@ class PortfolioEdit extends Component {
         .then((portfolio) => {
             setSubmitting(false);
             this.setState({error: undefined});
-            Router.pushRoute('/portfolios');
+            Router.pushRoute('/portfolio');
         }).catch((err) => {
             const error = err.message || 'Server error';
             setSubmitting(false);
